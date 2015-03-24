@@ -1,4 +1,4 @@
-angular.module('calorific', ['ionic'])
+angular.module('7 Day Health Tracker', ['ionic'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -13,4 +13,24 @@ angular.module('calorific', ['ionic'])
   });
     
 })
+angular.module('7Day', ['ionic'])
+
+      .config(function($stateProvider, $urlRouterProvider) {
+
+        
+        $urlRouterProvider.otherwise('/');
+        
+        $stateProvider
+
+        .state('index', {
+          url: '/',
+          templateUrl: 'index.html'
+        })
+
+        .state('Calories', {
+          url: '/Calories',
+          templateUrl: 'Calories.html'
+        });
+
+      })
 
