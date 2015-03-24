@@ -11,4 +11,6 @@ angular.module('calorific', ['ionic'])
       StatusBar.styleDefault();
     }
   });
+    
 })
+
