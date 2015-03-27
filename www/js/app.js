@@ -11,26 +11,30 @@ angular.module('7 Day Health Tracker', ['ionic'])
       StatusBar.styleDefault();
     }
   });
-    
+
 })
 angular.module('7Day', ['ionic'])
 
-      .config(function($stateProvider, $urlRouterProvider) {
+        .config(function ($stateProvider, $urlRouterProvider) {
 
-        
-        $urlRouterProvider.otherwise('/');
-        
-        $stateProvider
 
-        .state('index', {
-          url: '/',
-          templateUrl: 'index.html'
+            $urlRouterProvider.otherwise('/');
+
+            $stateProvider
+
+            .state('state1', {
+                url: '/',
+                templateUrl: 'index.html'
+            })
+
+            .state('state2', {
+                url: '/state2',
+                templateUrl: 'templates/menu.html'
+            })
+
+            .state('state3', {
+                url: '/state3',
+                templateUrl: 'templates/calorie.html'
+            });
+
         })
-
-        .state('Calories', {
-          url: '/Calories',
-          templateUrl: 'Calories.html'
-        });
-
-      })
-
