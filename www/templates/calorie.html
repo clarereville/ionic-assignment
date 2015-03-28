@@ -1,6 +1,99 @@
 <html>
-<body>
 
-	<p> calorie counter will go here 
-</body>
+<head>
+<script src="js/app.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function mod(div,base) {
+	return Math.round(div - (Math.floor(div/base)*base));
+	}
+	function calcBmi() {
+	var w = document.bmi.weight.value * 1;
+	var HeightFeetInt = document.bmi.htf.value * 1;
+	var HeightInchesInt = document.bmi.hti.value * 1;
+	HeightFeetConvert = HeightFeetInt * 12;
+	h = HeightFeetConvert + HeightInchesInt;
+	displaybmi = (Math.round((w * 703) / (h * h)));
+	var rvalue = true;
+	if ( (w <= 35) || (w >= 500)  || (h <= 48) || (h >= 120) ) {
+	alert ("Invalid data.  Please check and re-enter!");
+	rvalue = false;
+	}
+	if (rvalue) {
+	if (HeightInchesInt > 11) {
+	reminderinches = mod(HeightInchesInt,12);
+	document.bmi.hti.value = reminderinches;
+	document.bmi.htf.value = HeightFeetInt +
+	((HeightInchesInt - reminderinches)/12);
+	document.bmi.answer.value = displaybmi;
+	}
+	if (displaybmi <19)
+	document.bmi.comment.value = "Underweight";
+	if (displaybmi >=19 && displaybmi <=25)
+	document.bmi.comment.value = "Desirable";
+	if (displaybmi >=26 && displaybmi <=29)
+	document.bmi.comment.value = "prone to health risks";
+	if (displaybmi >=30 && displaybmi <=40)
+	document.bmi.comment.value = "Obese";
+	if (displaybmi >40)
+	document.bmi.comment.value = "Extremely obese";
+	document.bmi.answer.value = displaybmi; }
+	return rvalue;
+	}
+	//  End -->
+
+</script>
+</head>
+ <body ng-app="7Day">
+
+	<ion-nav-view>
+    </ion-nav-view>
+	<ion-pane>
+    <div class="bar bar-header bar-calm">
+		<button class="button icon-left ion-home"ui-sref="state1">
+		Home </button>
+        <h1 class="title">7 Day Health </h1>
+    </div>
+	  <ion-content>
+<form name=bmi>
+<center>
+<table width=200 border=1>
+<tr>
+<td align=center><B>Weight:</B>
+<input type=text name=weight SIZE=3 maxlength=3> lbs.</td>
+</tr>
+<tr>
+<td align=center><B>Height:</B>
+<input type=text name=htf size=1 maxlength=1> Ft.
+<input type=text name=hti size=2 maxlength=2> In.
+</td>
+</tr>
+<tr>
+<td align=center>
+<input type=button value="Calculate BMI" onclick="calcBmi()">
+
+<hr></td>
+</tr>
+<tr>
+<td><B>Body Mass Index</B>
+<input type=text name=answer size=3>
+</td>
+</tr>
+	<tr>
+		<td>
+		According to the Panel on Energy, Obesity, and
+		Body Weight Standards published by American
+		Journal of Clinical Nutrition, your category is:<br>
+		<input type=text name=comment size=25>
+		</td>
+	</tr>
+	</table>
+	</center>
+	</form>
+	</ion-content>
+    <div class="bar bar-footer bar-stable">
+        <div class="title">@Clare Reville</div>
+    </div>
+	</ion-pane>
+	
+	</body>
 </html>
