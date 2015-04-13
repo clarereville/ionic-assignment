@@ -31,10 +31,29 @@ angular.module('7Day', ['ionic'])
                 url: '/state2',
                 templateUrl: 'templates/menu.html'
             })
-
-            .state('state3', {
+			.state('state3', {
                 url: '/state3',
                 templateUrl: 'templates/calorie.html'
+            })
+			.state('state4', {
+                url: '/state4',
+                templateUrl: 'templates/.html'
+            })
+			.state('state5', {
+                url: '/state5',
+                templateUrl: 'templates/.html'
+            })
+			.state('state6', {
+                url: '/state6',
+                templateUrl: 'templates/.html'
+            })
+			.state('state7', {
+                url: '/state7',
+                templateUrl: 'templates/.html'
+            })
+            .state('state8', {
+                url: '/state8',
+                templateUrl: 'templates/.html'
             });
 
         })
