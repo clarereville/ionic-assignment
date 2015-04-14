@@ -37,23 +37,27 @@ angular.module('7Day', ['ionic'])
             })
 			.state('state4', {
                 url: '/state4',
-                templateUrl: 'templates/.html'
+                templateUrl: 'templates/counter.html'
             })
 			.state('state5', {
                 url: '/state5',
-                templateUrl: 'templates/.html'
+                templateUrl: 'templates/tracker.html'
             })
 			.state('state6', {
                 url: '/state6',
-                templateUrl: 'templates/.html'
+                templateUrl: 'templates/foods.html'
             })
 			.state('state7', {
                 url: '/state7',
-                templateUrl: 'templates/.html'
+                templateUrl: 'templates/eatingtips.html'
             })
             .state('state8', {
                 url: '/state8',
-                templateUrl: 'templates/.html'
+                templateUrl: 'templates/exercise.html'
+            })
+			 .state('state9', {
+                url: '/state9',
+                templateUrl: 'templates/kids.html'
             });
 
         })
