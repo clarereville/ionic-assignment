@@ -2,8 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, 
-user-scalable=no, width=device-width">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
 	<style type="text/css">
 	table.tableizer-table {
@@ -16,9 +15,15 @@ user-scalable=no, width=device-width">
 		border: 1px solid #ccc;
 	}
 	.tableizer-table th {
-		background-color: #104E8B; 
+		padding: 6px;
+		margin: 3px;
+		border: 1px solid #ccc;
+		background-color: #6CE843; 
 		color: #FFF;
-		font-weight: bold;
+		font-weight: bold
+		font-size: 14px;
+		rowspan:3;
+		
 	}
 	</style>
 
@@ -50,73 +55,226 @@ remove the CSS includes above
 		<button class="button icon-left ion-home"ui-sref="state1">
 		Home </button>
         <h1 class="title">7 Day Health </h1>
+		<a class="button icon-left ion-chevron-left button-clear button-light"ui-sref="state2">Back</a>
     </div>
       <ion-content>
 	  <br>
 	  <br>
-	  <div class = "list">
+		<div class = "list">
 	  
-		<div class="item item-divider">
 		<table class="tableizer-table">
-		<tr class="tableizer-firstrow"><th>Milk & Milk Products</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+			<tr class="tableizer-firstrow"><th>Dairy</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+			 <tr><td>Calories</td><td>Quantity</td><td>Type</td></tr>
+			 <tr><td>150</td><td>1 cup</td><td>Full-fat milk </td></tr>
+			 <tr><td>102</td><td>1 cup</td><td>Low fat milk (1%)</td></tr>
+			 <tr><td>157</td><td>1 cup</td><td>Cow's milk</td></tr>
+			 <tr><td>264</td><td>1 cup</td><td>Goat milk</td></tr>
+			 <tr><td>123</td><td>28 g</td><td>Sweetened Condensed Milk "cans"</td></tr>
+			 <tr><td>635</td><td>Half a cup</td><td>Full cream milk powder</td></tr>
+			 <tr><td>435</td><td>Half a cup</td><td>Skim milk powder</td></tr>
+			 <tr><td>208</td><td>1 cup</td><td>Full-fat chocolate milk</td></tr>
+			 <tr><td>244</td><td>1 cup</td><td>Strawberry Milk</td></tr>
+			 <tr><td>114</td><td>Slice, 28 gm</td><td>Cheddar cheese slices</td></tr>
+			 <tr><td>75</td><td>28 g</td><td>Feta cheese</td></tr>
+			 <tr><td>128</td><td>28 g</td><td>Mascarpone cheese</td></tr>
+			 <tr><td>216</td><td>Half a cup</td><td>Ricotta cheese "whole milk"</td></tr>
+			 <tr><td>130</td><td>28 g</td><td>Parmesan cheese</td></tr>
+			 <tr><td>86</td><td>28 g</td><td>Camembert cheese </td></tr>
+			 <tr><td>99</td><td>100 g</td><td>Cottage cheese </td></tr>
+			 <tr><td>289</td><td>100 g</td><td>Akkawi cheese</td></tr>
+			 <tr><td>37</td><td>1 spoon</td><td>Cream Medium</td></tr>
+			 <tr><td>141</td><td>1 spoon</td><td>Rob "yogurt" full-fat</td></tr>
+			 <tr><td>114</td><td>1 spoon</td><td>Rob "yogurt" skim</td></tr>
+			 <tr><td>135</td><td>Half a cup</td><td>Vanilla ice cream 10% fat</td></tr>
+			<tr class="tableizer-firstrow"><th>Drinks</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+			 <tr><td>Calories</td><td>Quantity</td><td>Type</td></tr>
+			 <tr><td>60</td><td>Half a cup</td><td>Apple juice</td></tr>
+			 <tr><td>72</td><td>Half a cup</td><td>Apricot juice, canned</td></tr>
+			 <tr><td>78</td><td>Half a cup</td><td>Grape juice, canned</td></tr>
+			 <tr><td>3</td><td>Spoon to eat</td><td>Lemon juice canned</td></tr>
+			 <tr><td>59</td><td>Half a cup</td><td>Fresh orange juice</td></tr>
+			 <tr><td>175</td><td>One cup</td><td>Guava juice</td></tr>
+			 <tr><td>110</td><td>One cup</td><td>Mango juice</td></tr>
+			 <tr><td>165</td><td>One cup</td><td>Vimto juice</td></tr>
+			 <tr><td>Soft Drinks</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+			 <tr><td>100</td><td>240 ml cup</td><td>Pepsi-Cola</td></tr>
+			 <tr><td>0</td><td>240 ml cup</td><td>Diet Pepsi-Cola</td></tr>
+			 <tr><td>90</td><td>240 ml cup</td><td>Seven Up</td></tr>
+			 <tr><td>96</td><td>240 ml cup</td><td>Sprite</td></tr>
+			 <tr><td>119</td><td>240 ml cup</td><td>Fanta</td></tr>
+			 <tr><td>97</td><td>240 ml cup</td><td>Coca-Cola</td></tr>
+			 <tr><td>1</td><td>240 ml cup</td><td>Diet Coca-Cola</td></tr>
+			 <tr><td>126</td><td>240 ml cup</td><td>Cream soda</td></tr>
+			<tr class="tableizer-firstrow"><th>Meats</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+			 <tr><td>Calories</td><td>Quantity</td><td>Type</td></tr>
+			 <tr><td>57</td><td>28 g</td><td>Turkey</td></tr>
+			 <tr><td>88</td><td>28 g </td><td>Beef</td></tr>
+			 <tr><td>102</td><td>42 g</td><td>Turkey</td></tr>
+			 <tr><td>116</td><td>42 g</td><td>Chicken meat</td></tr>
+			<tr class="tableizer-firstrow"><th>Eggs</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+			 <tr><td>Calories</td><td>Quantity</td><td>Type</td></tr>
+			 <tr><td>17</td><td>One, big</td><td>Egg whites, (fresh or iced)</td></tr>
+			 <tr><td>59</td><td>One, big</td><td>Fresh egg yolk</td></tr>
+			 <tr><td>79</td><td>One, big</td><td>Full cook boiled eggs</td></tr>
+			 <tr><td>91</td><td>One, big</td><td>Fried eggs</td></tr>
+			 <tr><td>92</td><td>One, big</td><td>Omelet</td></tr>
+			 <tr><td>252</td><td>113 g</td><td>Omelet with cheese and vegetables</td></tr>
+			<tr class="tableizer-firstrow"><th>Nuts</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+			 <tr><td>Calories</td><td>Quantity</td><td>Type</td></tr>
+			 <tr><td>380</td><td>Half a cup, 60 g</td><td>Nuts</td></tr>
+			 <tr><td>209</td><td>Quarter a cup</td><td>Almonds, dry</td></tr>
+			 <tr><td>160</td><td>28 g</td><td>Cashew, roasted, dry </td></tr>
+			 <tr><td>165</td><td>28 g</td><td>Cashew, roasted, oily</td></tr>
+			 <tr><td>170</td><td>28 g</td><td>Nuts, roasted, dry </td></tr>
+			 <tr><td>176</td><td>28 g</td><td>Hazelnut, roasted, oily</td></tr>
+			 <tr><td>215</td><td>Half a cup</td><td>Lentils, whole, green</td></tr>
+			 <tr><td>210</td><td>One cup</td><td>Lentils, cooked</td></tr>
+			<tr class="tableizer-firstrow"><th>Oils/Fats</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+			 <tr><td>Calories</td><td>Quantity</td><td>Type</td></tr>
+			 <tr><td>105</td><td>1 Tablespoon</td><td>Margarine</td></tr>
+			 <tr><td>120</td><td>1 Tablespoon</td><td>Olive oil</td></tr>
+			 <tr><td>120</td><td>1 Tablespoon</td><td>Sunflower oil</td></tr>
+			 <tr><td>114</td><td>1 Tablespoon</td><td>Sheep fat</td></tr>
+			 <tr><td>126</td><td>1 Tablespoon</td><td>Vegetable oil</td></tr>
+			 <tr><td>125</td><td>1 Tablespoon</td><td>Beef fat</td></tr>
+			 <tr><td>36</td><td>1 Tablespoon</td><td>Butter</td></tr>
+			 <tr><td>120</td><td>1 Tablespoon</td><td>Corn oil</td></tr>
+			<tr class="tableizer-firstrow"><th>Fresh Fruit</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+			 <tr><td>Calories</td><td>Quantity</td><td>Type</td></tr>
+			 <tr><td>81</td><td>Medium, 140 g</td><td>Apples</td></tr>
+			 <tr><td>17</td><td>Medium, 30 g</td><td>Apricot</td></tr>
+			 <tr><td>105</td><td>Medium, 100 g</td><td>Banana</td></tr>
+			 <tr><td>37</td><td>One, 40 g</td><td>Fig</td></tr>
+			 <tr><td>38</td><td>Half </td><td>Grapefruit</td></tr>
+			 <tr><td>49</td><td>10 beads</td><td>Cherries</td></tr>
+			 <tr><td>162</td><td>Half </td><td>Avocado</td></tr>
+			 <tr><td>53</td><td>Half a cup</td><td>Grapes</td></tr>
+			 <tr><td>45</td><td>One, 85 g</td><td>Guava</td></tr>
+			 <tr><td>46</td><td>One, 76 g</td><td>Kiwi</td></tr>
+			 <tr><td>68</td><td>Half, 85 g</td><td>Mango</td></tr>
+			 <tr><td>62</td><td>One, 110 g</td><td>Orange</td></tr>
+			 <tr><td>117</td><td>Medium</td><td>Papaya</td></tr>
+			 <tr><td>37</td><td>One, 85 g</td><td>Peach</td></tr>
+			 <tr><td>98</td><td>Medium, 170 g</td><td>Pear</td></tr>
+			 <tr><td>42</td><td>Slice, 82 g</td><td>Pineapple</td></tr>
+			 <tr><td>36</td><td>One, 60 g</td><td>Plum</td></tr>
+			 <tr><td>110</td><td>Medium, 150 g</td><td>Pomegranate</td></tr>
+			 <tr><td>67</td><td>Medium, 142 g</td><td>Nectarine </td></tr>
+			 <tr><td>26</td><td>Piece, 100 g</td><td>Watermelon</td></tr>
+			 <tr><td>33</td><td>Piece, 100 g </td><td>Melon</td></tr>
+			 <tr><td>23</td><td>Half a cup</td><td>Strawberries</td></tr>
+			 <tr><td>37</td><td>One, 85 g</td><td>Tangerine</td></tr>
+			 <tr><td>122</td><td>One cup</td><td>Blueberry</td></tr>
+			 <tr><td>150</td><td>10 beads</td><td>Rutab/ripe dates</td></tr>
+			 <tr><td>49</td><td>100 g</td><td>Loquat </td></tr>
+			 <tr><td>52</td><td>100 g</td><td>Plum</td></tr>
+			 <tr><td>17</td><td>One, 60 g</td><td>Lemon</td></tr>
+			 <tr><td>53</td><td>Fruit size</td><td>Sweet Lemon</td></tr>
+			 <tr><td>117</td><td>One cup</td><td>Black berry</td></tr>
+			<tr class="tableizer-firstrow"><th>Vegetables</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+			 <tr><td>Calories</td><td>Quantity</td><td>Type</td></tr>
+			 <tr><td>31</td><td>Medium, 60 g</td><td>Carrot</td></tr>
+			 <tr><td>35</td><td>Half a cup</td><td>Carrot, cooked</td></tr>
+			 <tr><td>15</td><td>Half a cup</td><td>Cauliflower, cooked</td></tr>
+			 <tr><td>12</td><td>Half a cup</td><td>Cauliflower, uncooked</td></tr>
+			 <tr><td>7</td><td>Half a cup</td><td>Cucumbers, chopped</td></tr>
+			 <tr><td>100</td><td>Half a cup</td><td>Fried eggplant</td></tr>
+			 <tr><td>13</td><td>Half a cup</td><td>Eggplant, cooked</td></tr>
+			 <tr><td>20</td><td>Half a cup</td><td>Green beans, cooked</td></tr>
+			 <tr><td>16</td><td>Half a cup</td><td>Cabbage, cooked</td></tr>
+			 <tr><td>10</td><td>Half a cup</td><td>Celery</td></tr>
+			 <tr><td>77</td><td>One, medium</td><td>Corn</td></tr>
+			 <tr><td>9</td><td>Half a cup</td><td>Mushrooms, fresh</td></tr>
+			 <tr><td>4</td><td>Half a cup</td><td>Lettuce</td></tr>
+			 <tr><td>54</td><td>Half a cup</td><td>Mixed vegetables (a variety of vegetables cooked together)</td></tr>
+			 <tr><td>25</td><td>Half a cup</td><td>Okra, cooked and chopped</td></tr>
+			 <tr><td>27</td><td>Half a cup</td><td>Fresh onions, chopped</td></tr>
+			 <tr><td>67</td><td>Half a cup</td><td>Green peas, cooked </td></tr>
+			 <tr><td>12</td><td>Half a cup</td><td>Peppers, chopped</td></tr>
+			 <tr><td>18</td><td>One, 30 g</td><td>Hot pepper</td></tr>
+			 <tr><td>220</td><td>195 g</td><td>Baked potato, with the peel</td></tr>
+			 <tr><td>162</td><td>195 g</td><td>Baked potato, without the peel</td></tr>
+			 <tr><td>158</td><td>10 pieces, 42 g</td><td>Fried potato </td></tr>
+			 <tr><td>14</td><td>Half a cup</td><td>Shalgam kale, boiled</td></tr>
+			 <tr><td>2</td><td>Half a cup</td><td>Watercress</td></tr>
+			 <tr><td>41</td><td>Half a cup</td><td>Squash</td></tr>
+			 <tr><td>7</td><td>10 grains, 40 g</td><td>Red rweid radish </td></tr>
+			 <tr><td>9</td><td>10 leaves, medium</td><td>Red rweid radish, leaves</td></tr>
+			 <tr><td>6</td><td>Half a cup</td><td>Chopped spinach</td></tr>
+			 <tr><td>18</td><td>Half a cup</td><td>Zucchini, chopped and cooked</td></tr>
+			 <tr><td>111</td><td>Half a cup</td><td>Sweet potatoes, mashed</td></tr>
+			 <tr><td>26</td><td>One, medium</td><td>Red tomatoes</td></tr>
+			 <tr><td>73</td><td>One cup</td><td>Green beans</td></tr>
+			 <tr><td>46</td><td>One cup</td><td>Beet</td></tr>
+			 <tr><td>73</td><td>One cup</td><td>Cabbage</td></tr>
+			 <tr><td>1</td><td>1 Spoon, minced</td><td>Leek</td></tr>
+			 <tr><td>97</td><td>1 package</td><td>Coriander</td></tr>
+			 <tr><td>25</td><td>1 package</td><td>Fenugreek, leaves </td></tr>
+			 <tr><td>7</td><td>5 pieces of garlic peeled </td><td>Garlic</td></tr>
+			 <tr><td>146</td><td>1 cup</td><td>Grape leaves</td></tr>
+			 <tr><td>84</td><td>Package, medium </td><td>Mint</td></tr>
+			 <tr><td>95</td><td>10 grains, medium</td><td>Black olives</td></tr>
+			 <tr><td>66</td><td>10 grains, medium</td><td>Green olives</td></tr>
+			 <tr><td>34</td><td>1 cup, minced</td><td>Parsley</td></tr>
+			 <tr><td>25</td><td>Package, medium </td><td>Parsley</td></tr>
+			 <tr><td>58</td><td>Package, medium </td><td>White rweid radishes</td></tr>
+			 <tr><td>14</td><td>1 Cup, chopped</td><td>Spinach</td></tr>
+			 <tr><td>31</td><td>1 cup, chopped</td><td>Zucchini</td></tr>
+			 <tr><td>40</td><td>One, medium</td><td>Zucchini</td></tr>
+			 <tr><td>50</td><td>100 g</td><td>Basil</td></tr>
+			 <tr><td>32</td><td>100 g</td><td>Boil</td></tr>
+			 <tr><td>32</td><td>100 g</td><td>Legume</td></tr>
+			 <tr><td>82</td><td>100 g</td><td>Sugar-cane</td></tr>
+			<tr class="tableizer-firstrow"><th>Grains</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+			 <tr><td>Calories</td><td>Quantity</td><td>Type</td></tr>
+			 <tr><td>17</td><td>100 g</td><td>Bread, cereals</td></tr>
+			 <tr><td>130</td><td>One, 50 g</td><td>Whole wheat bread</td></tr>
+			 <tr><td>190</td><td>Small, 130 g</td><td>Pasta with sauce</td></tr>
+			 <tr><td>95</td><td>Cup, 25 g</td><td>Corn flakes</td></tr>
+			 <tr><td>333</td><td>Quarter of a loaf, 115 g</td><td>French bread</td></tr>
+			 <tr><td>178</td><td>4 pieces, 55 g</td><td>Plain biscuits</td></tr>
+			 <tr><td>131</td><td>Half a cup</td><td>White rice, cooked (long grain)</td></tr>
+			 <tr><td>61</td><td>A slice</td><td>Brown toast</td></tr>
+			 <tr><td>64</td><td>A slice</td><td>Plain white toast</td></tr>
+			 <tr><td>99</td><td>Half a cup</td><td>Spaghetti, cooked or pasta</td></tr>
+			 <tr><td>672</td><td>One cup</td><td>Barley</td></tr>
+			 <tr><td>344</td><td>One cup</td><td>Pasta</td></tr>
+			 <tr><td>471</td><td>One cup</td><td>Cornstarch</td></tr>
+			 <tr><td>675</td><td>One cup</td><td>Rice, uncooked</td></tr>
+			 <tr><td>613</td><td>One cup</td><td>Bulgur (groats, crushed)</td></tr>
+			 <tr><td>485</td><td>One cup</td><td>Wheat</td></tr>
+			 <tr class="tableizer-firstrow"><th>Red Meat</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+			 <tr><td>Calories</td><td>Quantity</td><td>Type</td></tr>
+			 <tr><td>205</td><td>85 g</td><td>Lamb thigh, roasted with fat</td></tr>
+			 <tr><td>140</td><td>73 g</td><td>Lamb thigh, roasted without fat</td></tr>
+			 <tr><td>200</td><td>85 g</td><td>Lamb rib, grilled without fat</td></tr>
+			 <tr><td>189</td><td>85 g</td><td>Beef, chest, cooked </td></tr>
+			 <tr><td>183</td><td>85 g</td><td>Beef shoulder, without fat</td></tr>
+			 <tr><td>245</td><td>85 g</td><td>Beef, minced and cooked </td></tr>
+			<tr class="tableizer-firstrow"><th>Chicken</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+			 <tr><td>Calories</td><td>Quantity</td><td>Type</td></tr>
+			 <tr><td>167</td><td>85 g</td><td>Chicken leg (hip), without skin, grilled</td></tr>
+			 <tr><td>223</td><td>85 g</td><td>Chicken leg (hip), with skin, grilled</td></tr>
+			 <tr><td>142</td><td>Half a breast</td><td>Chicken breast, without skin, grilled</td></tr>
+			 <tr><td>193</td><td>Half a breast</td><td>Chicken breast, with skin, grilled</td></tr>
+			 <tr><td>161</td><td>Half a breast</td><td>Chicken breast, without skin, fried</td></tr>
+			 <tr><td>99</td><td>1 wing "35.5 g"</td><td>Chicken wings, with skin, grilled</td></tr>
+			 <tr><td>290</td><td>6 pieces "104 g"</td><td>Chicken pieces, vacuum, fried</td></tr>
+			<tr class="tableizer-firstrow"><th>Fish</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+			<tr><td>Calories</td><td>Quantity</td><td>Type</td></tr>
+			 <tr><td>58</td><td>28 g</td><td>Sardines, canned in oil</td></tr>
+			 <tr><td>42</td><td>21 g</td><td>Anchovies, canned in oil</td></tr>
+			 <tr><td>104</td><td>85 g</td><td>Tuna, canned in water</td></tr>
+			 <tr><td>169</td><td>85 g</td><td>Tuna, canned in oil</td></tr>
+			 <tr><td>99</td><td>85 g</td><td>Smoked salmon</td></tr>
+			 <tr><td>136</td><td>85 g</td><td>Grilled Fish</td></tr>
+			 <tr><td>228</td><td>3 pieces, 85 g</td><td>Fish fried with rusk</td></tr>
+			 <tr><td>206</td><td>85 g</td><td>Shrimp fried with rusk</td></tr>
+			</table>
+
 		</div>
-		 <tr><td>Calories</td><td>Quantity</td><td>Type</td></tr>
-		 <tr><td>150</td><td>1 cup</td><td>Full-fat milk </td></tr>
-		 <tr><td>102</td><td>1 cup</td><td>Low fat milk (1%)</td></tr>
-		 <tr><td>157</td><td>1 cup</td><td>Cow's milk</td></tr>
-		 <tr><td>264</td><td>1 cup</td><td>Goat milk</td></tr>
-		 <tr><td>123</td><td>28 g</td><td>Sweetened Condensed Milk "cans"</td></tr>
-		 <tr><td>208</td><td>1 cup</td><td>Full-fat chocolate milk</td></tr>
-		 <tr><td>244</td><td>1 cup</td><td>Strawberry Milk</td></tr>
-		 <tr><td>114</td><td>Slice, 28 gm</td><td>Cheddar cheese slices</td></tr>
-		 <tr><td>75</td><td>28 g</td><td>Feta cheese</td></tr>
-		 <tr><td>80</td><td>28 g</td><td>Mozzarella cheese</td></tr>
-		 <tr><td>98</td><td>28 g</td><td>Edam cheese</td></tr>
-		 <tr><td>128</td><td>28 g</td><td>Mascarpone cheese</td></tr>
-		 <tr><td>216</td><td>Half a cup</td><td>Ricotta cheese "whole milk"</td></tr>
-		 <tr><td>130</td><td>28 g</td><td>Parmesan cheese</td></tr>
-		 <tr><td>86</td><td>28 g</td><td>Camembert cheese </td></tr>
-		 <tr><td>99</td><td>100 g</td><td>Cottage cheese </td></tr>
-		 <tr><td>37</td><td>1 spoon</td><td>Cream Medium</td></tr>
-		 <tr><td>141</td><td>1 spoon</td><td>Rob "yogurt" full-fat</td></tr>
-		 <tr><td>114</td><td>1 spoon</td><td>Rob "yogurt" skim</td></tr>
-		 <tr><td>135</td><td>Half a cup</td><td>Vanilla ice cream 10% fat</td></tr>
-		</table>
-		</div>
-		<div>
-		<div class="item item-divider">
-		<table class="tableizer-table">
-		<tr class="tableizer-firstrow"><th>Drinks & Juices</th><th>&nbsp;</th><th>&nbsp;</th></tr>
-		 <tr><td>Calories</td><td>Quantity</td><td>Type</td></tr>
-		 <tr><td>60</td><td>Half a cup</td><td>Apple juice</td></tr>
-		 <tr><td>59</td><td>Half a cup</td><td>Fresh orange juice</td></tr>
-		 <tr><td>52</td><td>Half a cup</td><td>Canned orange juice</td></tr>
-		 <tr><td>110</td><td>One cup</td><td>Mango juice</td></tr>
-		 <tr><td>165</td><td>One cup</td><td>Vimto juice</td></tr>
-		</table>
-		</div>
-		</div>
-		<div>
-		<div class="item item-divider">
-		<table class="tableizer-table">
-		<tr class="tableizer-firstrow"><th>Luncheon and Sausage Meat</th><th>&nbsp;</th><th>&nbsp;</th></tr>
-		 <tr><td>Calories</td><td>Quantity</td><td>Type</td></tr>
-		 <tr><td>142</td><td>Approx. 42 g</td><td>Beef</td></tr>
-		 <tr><td>40</td><td>28 g</td><td>Pastrami - turkey</td></tr>
-		 <tr><td>141</td><td>28 g</td><td>Pepperoni beef</td></tr>
-		 <tr><td>56</td><td>28 g</td><td>Salami - turkey</td></tr>
-		 <tr><td>72</td><td>28 g</td><td>Salami - beef</td></tr>
-		 <tr><td>47</td><td>28 g</td><td>Mortadella - beef</td></tr>
-		 <tr><td>57</td><td>28 g</td><td>Turkey</td></tr>
-		 <tr><td>88</td><td>28 g </td><td>Beef</td></tr>
-		 <tr><td>102</td><td>42 g</td><td>Turkey</td></tr>
-		 <tr><td>116</td><td>42 g</td><td>Chicken meat</td></tr>
-		</table>
-		</div>
-		</div>
-		<div>
-		
-		</div>
+		<br>
+		<br>
       </ion-content>
     <div class="bar bar-footer bar-stable">
         <div class="title">@Clare Reville</div>
