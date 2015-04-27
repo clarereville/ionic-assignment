@@ -13,6 +13,7 @@ angular.module('7 Day Health Tracker', ['ionic'])
   });
 
 })
+
 angular.module('7Day', ['ionic'])
 
         .config(function ($stateProvider, $urlRouterProvider) {

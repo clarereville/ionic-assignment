@@ -1,33 +1,3 @@
-.calorie_calculator_activities {
-	font-size: 80%;
-}
-
-.calorie_calculator_top_table {
-	font-size:12px;
-}
-
-.calorie_calculator_rez {
-	color:#009900;
-	font-weight:bold;
-}
-
-.calorie_calculator_activity_box {
-	background-color:#CCCCCC;
-}
-
-.calorie_calculator_activity_title {
-	font-size:90%;
-}
-
-
-.calorie_calculator_results {
-	background-color:#CCCCCC;
-}
-
-
-.calorie_calculator_minutes_left_error {
-	background-color:#FF0000;
-}
 
 
 IMG.displayed {
@@ -37,5 +7,4 @@ IMG.displayed {
     
  h3{
  text-align: center; }
- 
  
