@@ -1,4 +1,4 @@
-!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -20,32 +20,15 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
-
-	<script language="JavaScript">
-		<!--
+	<script type = "text/javascript">
 		function calculateBmi() {
-		var weight = document.bmi.weight.value
-		var height = document.bmi.height.value
+		var weight = parseInt(document.getElementById("weight").innerHTML
+		var height = parseInt(document.getElementById("height").innerHTML
 		if(weight > 0 && height > 0){	
 		var finalBmi = weight/(height/100*height/100)
-		document.bmi.bmi.value = finalBmi
-		if(finalBmi < 18.5){
-		document.bmi.meaning.value = "That you are too thin."
-		}
-		if(finalBmi > 18.5 && finalBmi < 25){
-		document.bmi.meaning.value = "That you are healthy."
-		}
-		if(finalBmi > 25){
-		document.bmi.meaning.value = "That you have overweight."
-		}
-		}
-		else{
-		alert("Please Fill in everything correctly")
-		}
-		}
-		//-->
-		</script>
-
+		
+	</script>
+	
   </head>
   <body ng-app="7Day">
 
@@ -58,44 +41,35 @@
 		<button class="button icon-left ion-home"ui-sref="state1">
 		Home </button>
         <h1 class="title">7 Day Health </h1>
+		<a class="button icon-left ion-chevron-left button-clear button-light"ui-sref="state2">Back</a>
     </div>
       <ion-content>
 	  <br>
 	  <br>
 	  <br>
+	  
 	  <div class="list">
-	  <div id = "bmi">
-		<label class="item item-input item-stacked-label">
-			<span id="weight"> Weight </span>
-			<input type="text"name="weight" size="10">
-		</label>
-		
-		<label class="item item-input item-stacked-label">
-			<span id = "height">Height</span>
-			<input type="text"name="height" size="10" >
-		</label>
+		<label class="item item-input">
+            <input type="number" id="weight" />
+          </label>
+		<label class="item item-input">
+            <input type="number" id="height" />
+          </label>
 		 <div>
-		 <a class = "button button-full button-balanced" onclick = "calculateBmi()">
-		 Calculate
-		 </a>
-		 </div>
+		 <button class="button button-block button-positive" onclick = "calculateBmi()">
+           BMI
+          </button> 
 		 </div>
 		 <div class ="result">
-		 <label class="item item-input item-stacked-label">
-			<span class="input-label">BMI</span>
-			<input type="text"name="bmi" size="10">
-		</label>
-		<label class="item item-input item-stacked-label">
-			<span class="input-label">This Means</span>
-			<input type="text"name="meaning" size="10">
-		</label>
+		 <label class="item item-input">
+            <input type="number" id="finalBmi" />
+          </label>
 		<div>
-		<a class = "button button-full button-balanced" onclick="reset">
-		Reset
-		</a>
+		<button class="button button-block button-positive" onclick=>
+            Reset
+          </button> 
 		</div>
 		</div>
-	
 		</div>
      </ion-content>
 	 <br>

@@ -61,8 +61,16 @@ angular.module('7Day', ['ionic'])
                 templateUrl: 'templates/kids.html'
             });
 
-        })
+        });
+	
  angular.module('counter', ['ionic'])
       .controller("CountCtrl", function($scope) {
         $scope.count = 0;
       });
+
+
+ angular.module('cals', ['ionic'])
+
+.controller('CalsCtrl', function($scope) {
+  $scope.track = 0;
+});	  
