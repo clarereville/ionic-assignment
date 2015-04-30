@@ -13,6 +13,17 @@ angular.module('7 Day Health Tracker', ['ionic'])
   });
 
 })
+angular.module('cals', ['ionic'])
+		.controller('CalsCtrl', function($scope) {
+		  $scope.count = 0;
+		});	
+		
+angular.module('bmi', ['ionic'])
+.controller('BmiCrtl', function($scope) {
+  $scope.BMI = 0;
+  $scope.Cals = 0;
+});	  
+
 
 angular.module('7Day', ['ionic'])
 
@@ -67,10 +78,6 @@ angular.module('7Day', ['ionic'])
       .controller("CountCtrl", function($scope) {
         $scope.count = 0;
       });
+	  
 
 
- angular.module('cals', ['ionic'])
-
-.controller('CalsCtrl', function($scope) {
-  $scope.track = 0;
-});	  

@@ -20,6 +20,13 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+	<script type = "text/javascipt">
+	angular.module('cals', ['ionic'])
+		.controller('CalsCtrl', function($scope) {
+		  $scope.count = 0;
+		});	  
+		angular.module('bmi', ['ionic'])
+	</script>
 	
   </head>
   <body ng-app="cals" ng-controller="CalsCtrl">
@@ -41,7 +48,7 @@
 			<img src="images/monday.jpg">
 			<p>Enter Mondays Calories</p>
 			<label class="item item-input">
-			<input type="text" ng-model="countMon" />
+			<input type="number" ng-model="countMon" />
 			</label>
 			</a>
 		<br>
@@ -49,7 +56,7 @@
 			<img src="images/tuesday.jpg">
 			<p>Enter Tuesdays Calories</p>
 			<label class="item item-input">
-			<input type="text" ng-model="countTues" />
+			<input type="number" ng-model="countTues" />
 			</label>
 			</a>
 		<br>
@@ -57,7 +64,7 @@
 			<img src="images/wed.jpg">
 			<p>Enter Wednesdays Calories</p>
 			<label class="item item-input">
-			<input type="text" ng-model="countWed" />
+			<input type="number" ng-model="countWed" />
 			</label>
 			</a>
 		<br>
@@ -65,7 +72,7 @@
 			<img src="images/thurs.jpg">
 			<p>Enter Thursdays Calories</p>
 			<label class="item item-input">
-			<input type="text" ng-model="countThurs" />
+			<input type="number" ng-model="countThurs" />
 			</label>
 			</a>
 		<br>
@@ -73,7 +80,7 @@
 			<img src="images/fri.jpg">
 			<p>Enter Fridays Calories</p>
 			<label class="item item-input">
-			<input type="text" ng-model="countFri" />
+			<input type="number" ng-model="countFri" />
 			</label>
 			</a>
 		<br>
@@ -81,7 +88,7 @@
 			<img src="images/sat.jpg">
 			<p>Enter Saturday Calories</p>
 			<label class="item item-input">
-			<input type="text" ng-model="countSat" />
+			<input type="number" ng-model="countSat" />
 			</label>
 			</a>
 		<br>
@@ -89,7 +96,7 @@
 			<img src="images/sun.jpg">
 			<p>Enter Sundays Calories</p>
 			<label class="item item-input">
-			<input type="text" ng-model="countSun" />
+			<input type="number" ng-model="countSun" />
 			</label>
 			</a>
 		<br>
