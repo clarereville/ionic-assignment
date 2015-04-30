@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- home page of the app  what the user will see when the app opens up-->
 <html>
   <head>
     <meta charset="utf-8">
@@ -7,10 +8,6 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -27,9 +24,8 @@
 	<ion-nav-view>
     </ion-nav-view>
 
-    <script type="text/ng-template" id="index.html">
-
     <ion-pane>
+	<!-- header contains home button and title -->
     <div class="bar bar-header bar-calm ">
 		<button class="button icon-left ion-home"ui-sref="state1">
 		Home </button>
@@ -38,17 +34,19 @@
       <ion-content>
 	  <br><br><br>
       <div>
+	  <!-- image for the home page-->
 		<IMG class="displayed" src="images/wheel.jpg" >
-		<h3>  </h3>
+		<!-- button that brings user to window -->
 		<button class="button button-block button-calm button-clear" ui-sref="state2">
            Learn More
         </button>
 		</div>
 	   <br><br><br>	
       </ion-content>
-    <div class="bar bar-footer bar-stable">
-        <div class="title"> © Clare Reville</div>
-    </div>
+	  <!-- footer -->
+		<div class="bar bar-footer bar-stable">
+			<div class="title"> © Dept of Health</div>
+		</div>
     </ion-pane>
 	</script>
   </body>
