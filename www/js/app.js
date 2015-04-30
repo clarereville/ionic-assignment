@@ -13,10 +13,6 @@ angular.module('7 Day Health Tracker', ['ionic'])
   });
 
 })
-angular.module('cals', ['ionic'])
-		.controller('CalsCtrl', function($scope) {
-		  $scope.count = 0;
-		});	
 		
 angular.module('bmi', ['ionic'])
 .controller('BmiCrtl', function($scope) {
@@ -45,7 +41,7 @@ angular.module('7Day', ['ionic'])
             })
 			.state('state3', {
                 url: '/state3',
-                templateUrl: 'templates/calorie.html'
+                templateUrl: 'templates/gender.html'
             })
 			.state('state4', {
                 url: '/state4',
@@ -70,6 +66,14 @@ angular.module('7Day', ['ionic'])
 			 .state('state9', {
                 url: '/state9',
                 templateUrl: 'templates/kids.html'
+            })
+			.state('state10', {
+                url: '/state10',
+                templateUrl: 'templates/calorie.html'
+            })
+			.state('state11', {
+                url: '/state11',
+                templateUrl: 'templates/caloriemen.html'
             });
 
         });
