@@ -32,52 +32,60 @@
     <div class="bar bar-header bar-calm">
 		<button class="button icon-left ion-home"ui-sref="state1">
 		Home </button>
-        <h1 class="title">7 Day Health </h1>
+        <h1 class="title">Health Calculator </h1>
 		<a class="button icon-left ion-chevron-left button-clear button-light"ui-sref="state2">Back</a>
     </div>
       <ion-content>
-	  <br>
-	  <br>
-	  <br>
+	  <br><br><br>
+	  <div class="card" "item item-text-wrap">
+		<h5>Enter your height & weight to get your BMI </h5>
+	  <div class="list list-inset">
 	  
-	  <div class="list list-inset"">
-		<label class="item item-input">
+		<label class="item item-input item-stacked-label">
 			<span class="input-label">Weight</span>
             <input type="number" ng-model="weight" placeholder="Weight lbs" />
           </label>
 		  <br>
-		<label class="item item-input">
+		<label class="item item-input item-stacked-label">
 			<span class="input-label">Height</span>
             <input type="number" ng-model="height" placeholder ="Height inches"/>
           </label>
 		  <br>
-		 <button class="button button-block button-positive" id = "BMI" ng-click = "BMI = weight/(height*height)*703">
-           BMI
+		 <button class="button button-block button-balanced button-clear" id = "BMI" ng-click = "BMI = weight/(height*height)*703">
+           Calculate BMI
           </button> 
 		 <br>
-		 <label class="item item-input">
+		 <label class="item item-input item-stacked-label">
 			<span class="input-label">Your BMI</span>
 			<input type="number" ng-model="BMI"  />
           </label>
 		<br>
-		  <label class="item item-input">
+		<button class="button button-block  button-light" ng-click="BMI= 0">
+            Reset
+          </button>
+		 <br> 
+		</div>
+		</div>
+		<div class="card" "item item-text-wrap">
+		<h5>Add your age to get your recommended calories </h5>
+		  <label class="item item-input item-stacked-label">
 		  <span class="input-label">Age</span>
-            <input type="number" ng-model="age" />
+            <input type="number" ng-model="age" placeholder="Age" />
           </label>
 		  <br>
 		  
 		  <button class="button button-block button-positive" ng-click = "Cals = 655+(4.35*weight)+(4.7*height)+(4.7*age)">
 		   Calories
           </button> 
-		   <label class="item item-input">
-		   <span class="input-label">RDA Calories</span>
+		   <label class="item item-input item-stacked-label">
+		   <span class="input-label">Ideal calorie consumption </span>
             <input type="number" ng-model="Cals" />
           </label>
 		  <br>
-			<button class="button button-block button-positive" ng-click="BMI= 0">
+			<button class="button button-block button-positive button-clear" ng-click="Cals= 0">
             Reset
           </button>
-		  
+		 </div> 
 		
 		</div>
 		<br>
@@ -88,7 +96,7 @@
 	 <br>
 	 <br>
     <div class="bar bar-footer bar-stable">
-        <div class="title">@Clare Reville</div>
+        <div class="title">© Clare Reville</div>
     </div>
 	
     </ion-pane>

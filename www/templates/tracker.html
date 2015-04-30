@@ -22,13 +22,13 @@
     <script src="js/app.js"></script>
 	
   </head>
-  <body ng-app="counter" ng-controller="CountCtrl">
+  <body ng-app="counter" ng-controller="CountCrtl">
  
 
     <div class="bar bar-header bar-calm">
 		<button class="button icon-left ion-home"ui-sref="state1">
 		Home </button>
-        <h1 class="title">7 Day Health </h1>
+        <h1 class="title">Health Calculator </h1>
 		<a class="button icon-left ion-chevron-left button-clear button-light"ui-sref="state2">Back</a>
     </div>
 	<ion-content>
@@ -93,7 +93,7 @@
 			</label>
 			</a>
 		<br>
-		 <button class="button button-block button-calm" ng-click="count = (countMon+countFri+countSat+countSun+countThurs+
+		 <button class="button button-block button-calm" ng-click="count= (countMon+countFri+countSat+countSun+countThurs+
 		 countTues +countWed)/7">
             Calculate
         </button> 
@@ -115,7 +115,7 @@
 	</ion-content>
       
     <div class="bar bar-footer bar-stable">
-        <div class="title">@Clare Reville</div>
+        <div class="title">© Clare Reville</div> 
     </div>
     </ion-pane>
 	
