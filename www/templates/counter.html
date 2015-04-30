@@ -15,7 +15,12 @@
     <script src="cordova.js"></script>
 
     <!-- your app's js-->
-    <script src="js/app.js"></script> 
+    <script type="text/javascript" >
+	angular.module('counter', ['ionic'])
+      .controller("CountCtrl", function($scope) {
+        $scope.count = 0;
+      });
+	</script> 
 	
   </head>
  

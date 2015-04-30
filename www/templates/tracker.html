@@ -19,7 +19,13 @@
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
-    <script src="js/app.js"></script>
+    <script type= "text/javascript">
+	angular.module('tracker', ['ionic'])
+	.controller('trackCrtl', function($scope) {
+	$scope.count = 0;
+  
+});	
+	</script>
 	
   </head>
   <body ng-app="tracker" ng-controller="trackCrtl">
@@ -93,7 +99,7 @@
 			</label>
 			</a>
 		<br>
-		 <button class="button button-block button-calm button-clear" ng-click="track= (countMon+countFri+countSat+countSun+countThurs+
+		 <button class="button button-block button-calm button-clear" ng-click="count= (countMon+countFri+countSat+countSun+countThurs+
 		 countTues +countWed)/7">
             Calculate
         </button> 
@@ -101,10 +107,10 @@
 			<img src="images/calculator.png">
 			<p>Weekly Average Calorie Intake</p>
 			<label class="item item-input">
-			<input type="number" ng-model="track" />
+			<input type="number" ng-model="count" />
 			</label>
 			</a>
-		<button class="button button-block button-calm" ng-click="track = 0">
+		<button class="button button-block button-calm" ng-click="count= 0">
             Clear Calculator
         </button>
 		</div>
