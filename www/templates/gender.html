@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- This page will enable the user whether male or female to calculate 
+	their calories based on gender  -->
 <html>
   <head>
     <meta charset="utf-8">
@@ -7,10 +9,6 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -26,44 +24,54 @@
   <body>
   
     <ion-pane> 
-     <div class="bar bar-header bar-calm">
+	<!--header contains title home button and back button -->
+    <div class="bar bar-header bar-calm">
 		<button class="button icon-left ion-home"ui-sref="state1">
-		Home </button>
-        <h1 class="title"> BMI </h1>
+			Home </button>
+		<h1 class="title"> BMI </h1>
+		<!-- link to state 2 ie:menu -->
 		<a class="button icon-left ion-chevron-left button-clear button-light"ui-sref="state2">Back</a>
     </div>
-      <ion-content>
+    <ion-content>
 	  <br>
 	  <br>
-	  <div class="list card">
-	  <div class="item item-divider">
-		Male BMI Calculator
-	  </div>
-	  <div class="item item-image">
-		<img src="images/menbmi.jpg">
-	  </div>
-		<button class="button button-clear button-block button-positive" ui-sref="state11">
-           Calculator
-        </button>  
+	<!-- 1st card male BMI -->
+	<div class="list card">
+		<div class="item item-divider">
+			Male BMI Calculator
 		</div>
+	
+		<div class="item item-image">
+			<!--thumbnail image -->
+			<img src="images/menbmi.jpg">
+		</div>
+		<!--button brings you to the calculator for men -->
+		<button class="button button-clear button-block button-positive" ui-sref="state11">
+			Calculator
+        </button>  
+	</div>
 		<br>
-	  <div class="list card">	
-	  <div class="item item-divider">
-		Female BMI Calculator
-	  </div>
-	  <div class="item item-image">
-		<img src="images/womenbmi.jpg">
-	  </div>
+	<!--2nd card female BMI-->
+	<div class="list card">	
+		<div class="item item-divider">
+			Female BMI Calculator
+		</div>
+		<div class="item item-image">
+			<!--thumbnail image-->
+			<img src="images/womenbmi.jpg">
+		</div>
+		<!--button brings you to the calculator for women -->
 		<button class="button button-clear button-block button-positive " ui-sref="state10">
-           Calculator
-          </button>  
+			Calculator
+        </button>  
 		<br>
-	  </div>
+	</div>
 	  <br>
 	  <br>
      </ion-content>
+	 <!--footer -->
      <div class="bar bar-footer bar-stable">
-        <div class="title">© Clare Reville</div>
+        <div class="title">© Dept of Health</div>
     </div>
     </ion-pane
   </body>

@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- this page is intended to enable the user to calculate the average daily calories they have consumed
+	over the course of the previous week takes the user input and divides by 7 to get the average -->
 <html>
   <head>
     <meta charset="utf-8">
@@ -7,10 +9,6 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -22,19 +20,22 @@
     <script type= "text/javascript">
 	angular.module('tracker', ['ionic'])
 	.controller('trackCrtl', function($scope) {
-	$scope.count = 0;
+	$scope.track = 0;
   
 });	
 	</script>
 	
   </head>
-  <body ng-app="tracker" ng-controller="trackCrtl">
+	<!-- angular-->
+	<body ng-app="tracker" ng-controller="trackCrtl">
  
 
     <div class="bar bar-header bar-calm">
+	<!--header contains title home button and back button -->
 		<button class="button icon-left ion-home"ui-sref="state1">
-		Home </button>
+			Home </button>
         <h1 class="title">Weekly Calories </h1>
+		<!-- returns to state 2 ie:menu-->
 		<a class="button icon-left ion-chevron-left button-clear button-light"ui-sref="state2">Back</a>
     </div>
 	<ion-content>
@@ -42,75 +43,101 @@
 	  <br>
 	  <br>
 	  
-	  <div class="list">
-			<a class="item item-thumbnail-left" href="#">
+	<div class="list">
+	<!--section for mondays calories -->
+		<a class="item item-thumbnail-left" href="#">
+			<!--thumbnail image -->
 			<img src="images/monday.jpg">
-			<p>Enter Mondays Calories</p>
+				<p>Enter Mondays Calories</p>
+			<!--input section for user -->
 			<label class="item item-input">
-			<input type="number" ng-model="countMon" />
+				<input type="number" ng-model="countMon" />
 			</label>
-			</a>
+		</a>
 		<br>
+		<!--section for tuesdays calories -->
 		<a class="item item-thumbnail-left" href="#">
+			<!-- thumbnail image-->
 			<img src="images/tuesday.jpg">
-			<p>Enter Tuesdays Calories</p>
+				<p>Enter Tuesdays Calories</p>
+			<!--input section for user-->
 			<label class="item item-input">
-			<input type="number" ng-model="countTues" />
+				<input type="number" ng-model="countTues" />
 			</label>
-			</a>
+		</a>
 		<br>
+		<!--section for wednesday calories -->
 		<a class="item item-thumbnail-left" href="#">
+			<!--thumbnail image -->
 			<img src="images/wed.jpg">
-			<p>Enter Wednesdays Calories</p>
+				<p>Enter Wednesdays Calories</p>
+			<!--input section for user -->
 			<label class="item item-input">
-			<input type="number" ng-model="countWed" />
+				<input type="number" ng-model="countWed" />
 			</label>
-			</a>
+		</a>
 		<br>
+		<!--section for thurs cals -->
 		<a class="item item-thumbnail-left" href="#">
+			<!--thumbnail image -->
 			<img src="images/thurs.jpg">
-			<p>Enter Thursdays Calories</p>
+				<p>Enter Thursdays Calories</p>
+			<!--input section for user -->
 			<label class="item item-input">
-			<input type="number" ng-model="countThurs" />
+				<input type="number" ng-model="countThurs" />
 			</label>
-			</a>
+		</a>
 		<br>
+		<!--section for friday calories -->
 		<a class="item item-thumbnail-left" href="#">
+			<!--thumbnail image -->
 			<img src="images/fri.jpg">
-			<p>Enter Fridays Calories</p>
+				<p>Enter Fridays Calories</p>
+			<!--input section for user -->
 			<label class="item item-input">
-			<input type="number" ng-model="countFri" />
+				<input type="number" ng-model="countFri" />
 			</label>
-			</a>
+		</a>
 		<br>
+		<!--section for sat calories -->
 		<a class="item item-thumbnail-left" href="#">
+			<!--thumbnail image -->
 			<img src="images/sat.jpg">
-			<p>Enter Saturday Calories</p>
+				<p>Enter Saturday Calories</p>
+			<!-- input section for user -->
 			<label class="item item-input">
-			<input type="number" ng-model="countSat" />
+				<input type="number" ng-model="countSat" />
 			</label>
-			</a>
+		</a>
 		<br>
+		<!-- section for sun calories-->
 		<a class="item item-thumbnail-left" href="#">
+			<!--thumbnail image -->
 			<img src="images/sun.jpg">
-			<p>Enter Sundays Calories</p>
+				<p>Enter Sundays Calories</p>
+			<!--input section for user -->
 			<label class="item item-input">
-			<input type="number" ng-model="countSun" />
+				<input type="number" ng-model="countSun" />
 			</label>
-			</a>
+		</a>
 		<br>
-		 <button class="button button-block button-calm button-clear" ng-click="count= (countMon+countFri+countSat+countSun+countThurs+
+		<!-- button when clicked will compute average for week for user-->
+		<button class="button button-block button-calm button-clear" ng-click="track= (countMon+countFri+countSat+countSun+countThurs+
 		 countTues +countWed)/7">
             Calculate
         </button> 
+		<!-- section for output -->
 		<a class="item item-thumbnail-left" href="#">
+			<!--thumbnail image -->
 			<img src="images/calculator.png">
-			<p>Weekly Average Calorie Intake</p>
+				<p>Weekly Average Calorie Intake</p>
+			<!--weekly calories will be displayed -->
 			<label class="item item-input">
-			<input type="number" ng-model="count" />
+				<input type="number" ng-model="track" />
 			</label>
-			</a>
-		<button class="button button-block button-calm" ng-click="count= 0">
+		</a>
+		<!--reset the weekly calculator -->
+		<button class="button button-block button-calm" ng-click="track= 0">
             Clear Calculator
         </button>
 		</div>
@@ -119,10 +146,10 @@
 		<br>
 		
 	</ion-content>
-      
-    <div class="bar bar-footer bar-stable">
-        <div class="title">© Clare Reville</div> 
-    </div>
+     <!-- footer-->
+		<div class="bar bar-footer bar-stable">
+			<div class="title">© Dept of Health</div> 
+		</div>
     </ion-pane>
 	
   </body>

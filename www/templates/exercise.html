@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- this section contains some exercise tipe for the user on simple cards -->
 <html>
   <head>
     <meta charset="utf-8">
@@ -7,10 +8,6 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -29,98 +26,122 @@
 
 
     <ion-pane>
+	<!-- header contains title, home button and back button -->
     <div class="bar bar-header bar-calm">
 		<button class="button icon-left ion-home"ui-sref="state1">Home </button>
         <h1 class="title">Exercise Tips </h1>
+		<!--brings user back to menu-->
 		<a class="button icon-left ion-chevron-left button-clear button-light"ui-sref="state2">Back</a>
     </div>
       <ion-content>
 		<br>
 		<br>
-	  
+		<!-- list of cards  -->
 		<div class="card">
-		<div class="item item-divider" >
-			Seek Medical Advice 
-		</div>
-		<div class="item item-text-wrap">
-		<p> See your doctor before you start any exercise program.  Get a full physical to make sure everything's in working order, then find a personal
-		trainer in your neighborhood and make an appointment with him or her for a consultation.  
-		Most trainers will give you a free consultation and help you figure out what your fitness level is, your body fat 
-		and circumference measurements, and the right way to start a program. </p>
-		</div>
-		<div class="item item-divider" >
-			Start slow
-		</div>
-		<div class="item item-text-wrap">
-		<p> Start Slow!  Many beginners make the mistake of doing too much when they first start out.  If you haven't worked out in a while 
-		(or ever) start with a walking program of about 20 to 30 minutes, 3 days a week. Each session,add a few minutes to your workout to
-		progress each week </p>
-		</div>
-		<div class="item item-divider" >
-			Monitor
-		</div>
-		<div class="item item-text-wrap">
-		<p> Write down your workouts every day, making notes about what you did, how you felt and how you improved since your last workout.</p>
-		</div>
-		<br>
-		<div class = "item item-divider">
-		<div class="item item-image">
-		<img src="images/med.jpg">
-		</div>
-		</div>
-		<br>
-		<div class="item item-divider" >
-			Schedule
-		</div>
-		<div class="item item-text-wrap">
-		<p> Schedule your workouts each week, just like you would a doctor's appointment. </p>
-		</div>
-		<div class="item item-divider" >
-			Buddy up
-		</div>
-		<div class="item item-text-wrap">
-		<p> Annoy your best friend, spouse or significant other into working out with you! </p>
-		</div>
-		<div class="item item-divider" >
-			Take it day at a time
-		</div>
-		<div class="item item-text-wrap">
-		<p> Every day, ask yourself how you will make your life healthier.  It can be as simple as drinking more water or parking farther 
-	`		away from the front door. </p>
-		</div>
-		<div class="item item-divider" >
-			Reward yourself
-		</div>
-		<div class="item item-text-wrap">
-		<p>Reward yourself!  Give yourself a massage when you reach your goals, or maybe some new workout clothes.  </p>
-		</div>
-		<div class="item item-divider" >
-			Set Goals
-		</div>
-		<div class="item item-text-wrap">
-		<p>Set daily or weekly goals.  Long term goals are great, but are so far away we often forget why we're working so hard.  
-			To stay motivated, write down a daily or weekly goal and then follow number 7 (rewarding yourself) if you reach it.  </p>
-		</div>
-		<div class="item item-divider" >
-			Prepare
-		</div>
-		<div class="item item-text-wrap">
-		<p> Prepare for your workout the night before by packing your gym bag or, if you work out at home, laying out your workout clothes so 
-			when you get home, you're ready to go. </p>
-		</div>
-		<div class="item item-divider" >
-			Eat Well be Well!!!!
-		</div>
-		<div class="item item-text-wrap">
-		<p> Eat regularly throughout the day so you don't drop out during your workout.  </p>
-		</div>
+			<!--item divider -->
+			<div class="item item-divider" >
+				Seek Medical Advice 
+			</div>
+			<!--info para -->
+			<div class="item item-text-wrap">
+				<p> See your doctor before you start any exercise program.  Get a full physical to make sure everything's in working order, then find a personal
+				trainer in your neighborhood and make an appointment with him or her for a consultation.  
+				Most trainers will give you a free consultation and help you figure out what your fitness level is, your body fat 
+				and circumference measurements, and the right way to start a program. </p>
+			</div>
+			<!--item divider -->
+			<div class="item item-divider" >
+				Start slow
+			</div>
+			<!--info para -->
+			<div class="item item-text-wrap">
+				<p> Start Slow!  Many beginners make the mistake of doing too much when they first start out.  If you haven't worked out in a while 
+				(or ever) start with a walking program of about 20 to 30 minutes, 3 days a week. Each session,add a few minutes to your workout to
+				progress each week </p>
+			</div>
+			<!--item divider -->
+			<div class="item item-divider" >
+				Monitor
+			</div>
+			<!--info para -->
+			<div class="item item-text-wrap">
+				<p> Write down your workouts every day, making notes about what you did, how you felt and how you improved since your last workout.</p>
+			</div>
+			<br>
+			<!-- image for fitness -->
+			<div class = "item item-divider">
+			<div class="item item-image">
+				<img src="images/med.jpg">
+			</div>
+			</div>
+			<br>
+			<!-- item divider -->
+			<div class="item item-divider" >
+				Schedule
+			</div>
+			<!--info para -->
+			<div class="item item-text-wrap">
+				<p> Schedule your workouts each week, just like you would a doctor's appointment. </p>
+			</div>
+			<!--item divider -->
+			<div class="item item-divider" >
+				Buddy up
+			</div>
+			<!-- info para -->
+			<div class="item item-text-wrap">
+				<p> Annoy your best friend, spouse or significant other into working out with you! </p>
+			</div>
+			<!--item divider -->
+			<div class="item item-divider" >
+				Take it day at a time
+			</div>
+			<!--info para -->
+			<div class="item item-text-wrap">
+				<p> Every day, ask yourself how you will make your life healthier.  It can be as simple as drinking more water or parking farther 
+			`		away from the front door. </p>
+			</div>
+			<!--item divider -->
+			<div class="item item-divider" >
+				Reward yourself
+			</div>
+			<!--info para -->
+			<div class="item item-text-wrap">
+				<p>Reward yourself!  Give yourself a massage when you reach your goals, or maybe some new workout clothes.  </p>
+			</div>
+			<!-- item divider -->
+			<div class="item item-divider" >
+				Set Goals
+			</div>
+			<!--info para -->
+			<div class="item item-text-wrap">
+				<p>Set daily or weekly goals.  Long term goals are great, but are so far away we often forget why we're working so hard.  
+					To stay motivated, write down a daily or weekly goal and then follow number 7 (rewarding yourself) if you reach it.  </p>
+			</div>
+			<!--item divider -->
+			<div class="item item-divider" >
+				Prepare
+			</div>
+			<!--info para -->
+			<div class="item item-text-wrap">
+				<p> Prepare for your workout the night before by packing your gym bag or, if you work out at home, laying out your workout clothes so 
+					when you get home, you're ready to go. </p>
+			</div>
+			<!--item divider -->
+			<div class="item item-divider" >
+				Eat Well be Well!!!!
+			</div>
+			<!--info para -->
+			<div class="item item-text-wrap">
+				<p> Eat regularly throughout the day so you don't drop out during your workout.  </p>
+			</div>
 		</div>
 		<br>
 		<br>
       </ion-content>
-    <div class="bar bar-footer bar-stable">
-        <div class="title">© Clare Reville</div>
-    </div>
+	  <!-- footer -->
+		<div class="bar bar-footer bar-stable">
+			<div class="title">© Dept of Health</div>
+		</div>
     </ion-pane>
 	
   </body>

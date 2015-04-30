@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- Daily calorie calculator enables the user to enter calorie amounts for
+	breakfast lunch dinner and snacks and calculate the total -->
 <html>
   <head>
     <meta charset="utf-8">
@@ -16,73 +18,90 @@
 
     <!-- your app's js-->
     <script type="text/javascript" >
-	angular.module('counter', ['ionic'])
+	 angular.module('counter', ['ionic'])
       .controller("CountCtrl", function($scope) {
         $scope.count = 0;
       });
 	</script> 
 	
   </head>
- 
-  <body ng-app="counter" ng-controller="CountCtrl">
+	<!-- angular-->
+	<body ng-app="counter" ng-controller="CountCtrl">
 
 	
     <ion-pane>
-    <div class="bar bar-header bar-calm">
+    <!--header contains title, home button and back buttin -->
+	<div class="bar bar-header bar-calm">
 		<button class="button icon-left ion-home"ui-sref="state1">
-		Home </button>
-        <h1 class="title">Daily Calories</h1>
+			Home </button>
+			<h1 class="title">Daily Calories</h1>
+		<!-- link to the menu page -->
 		<a class="button icon-left ion-chevron-left button-clear button-light"ui-sref="state2">Back</a>
     </div>
       <ion-content>
 	  <br>
 	  <br>
 	  <br>
-	  
+	  <!-- list of options for user input-->
 	  <div class="list">
 			<a class="item item-thumbnail-left" href="#">
-			<img src="images/breakfast.jpg">
-			<p>Enter Calories for Breakfast</p>
-			<label class="item item-input">
-			<input type="number" ng-model="countbreakfast" />
-			</label>
+				<!--thumbnail image -->
+				<img src="images/breakfast.jpg">
+				<!-- info-->
+				<p>Enter Calories for Breakfast</p>
+				<!--input section for user -->
+				<label class="item item-input">
+					<input type="number" ng-model="countbreakfast" />
+				</label>
 			</a>
 		<br>
 			<a class="item item-thumbnail-left" href="#">
-			<img src="images/lunch.jpg">
-			<p>Enter Calories for Lunch</p>
-			<label class="item item-input">
-			<input type="number" ng-model="countlunch" />
-			</label>
+				<!--thumbnail image -->
+				<img src="images/lunch.jpg">
+				<!--info -->
+				<p>Enter Calories for Lunch</p>
+				<!--input section for user -->
+				<label class="item item-input">
+					<input type="number" ng-model="countlunch" />
+				</label>
 			</a>
 		<br>
 			<a class="item item-thumbnail-left" href="#">
-			<img src="images/dinner.jpg">
-			<p>Enter Calories for Dinner</p>
-			<label class="item item-input">
-			<input type="number" ng-model="countdinner" />
-			</label>
+				<!--thumbnail image -->
+				<img src="images/dinner.jpg">
+				<!--info -->
+				<p>Enter Calories for Dinner</p>
+				<!-- section for user input-->
+				<label class="item item-input">
+					<input type="number" ng-model="countdinner" />
+				</label>
 			</a>
 		<br>
 			<a class="item item-thumbnail-left" href="#">
-			<img src="images/snacks.jpg">
-			<p>Enter Calories for Snacks</p>
-			<label class="item item-input">
-			<input type="number" ng-model="countsnacks" />
-			</label>
+				<!--thumbnail image -->
+				<img src="images/snacks.jpg">
+				<!--info -->
+				<p>Enter Calories for Snacks</p>
+				<!-- section for user input-->
+				<label class="item item-input">
+					<input type="number" ng-model="countsnacks" />
+				</label>
 			</a>
 		<br>
-	  
+		<!--button when pressed will sum the imputed numbers from the user -->
 	    <button class="button button-block button-calm button-clear button-outline" ng-click="count = countbreakfast + countlunch + countdinner +countsnacks">
             Calculate
         </button> 
 			<br>
 			<a class="item item-thumbnail-left" href="#">
-			<img src="images/calculator.png">
-			<p> Todays Calories</p>
-			<label class="item item-input">
-			<input type="number" ng-model="count" />
-			</label>
+				<!--thumbnail image -->
+				<img src="images/calculator.png">
+				<!-- info-->
+				<p> Todays Calories</p>
+				<!--output are for calculator -->
+				<label class="item item-input">
+					<input type="number" ng-model="count" />
+				</label>
 			</a>
 	  
 	  </div>
@@ -90,9 +109,10 @@
 	  <br>	
 	  <br>
       </ion-content>
-    <div class="bar bar-footer bar-stable">
-        <div class="title">© Clare Reville</div>
-    </div>
+	  <!--footer -->
+		<div class="bar bar-footer bar-stable">
+			<div class="title">© Dept of Health</div>
+		</div>
     </ion-pane>
 	
   </body>
