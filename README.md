@@ -1,7 +1,7 @@
 ##Mobile Application Development Project - Clare Reville
 
-Application developed as part of the module requirements for mobile applications 
-development. The App has been developed through the use of the Ionics Framework.
+Application developed as part of the module requirements for mobile programming @ Galway Mayo IT.
+The App has been developed through the use of the Ionics Framework.
 
 ###What the app does
 
@@ -21,6 +21,28 @@ calculate the calories.
 The calculator for the BMI & the calories is based on a math formula gotten online and applied 
 through an angular controller.
 
+### Comments 
+Each file is extensively commented.
+
+### Execution and performance
+A local host was used to test the execution and performance of the code. Model view control design principles were applied as best as possible.
+
+### User Interface
+An external style sheet was used to manage the UI. Some in-line css was used for the table,majority of the style comes from ionics CSS.
+
+###Complexity
+The app makes use of a combination of elements such as local data storage, lists, and cards and employs some basic angular elements. 
+
+### Source code
+A copy of the source code can by found on https://github.com/clarereville/ionic-assignment.
+
+###References
+>Icons used in the app were sourced from Ionicons: http://ionicons.com/ 
+>http://www.bmi-calculator.net/bmr-calculator/
+>http://www.nhs.uk/livewell/goodfood/pages/eight-tips-healthy-eating.aspx
+>Counter code: https://github.com/ianmcloughlin/ionic-counter
+>Disclaimer: All the Pictures in this app have taken from public domains & 
+copyright of these belongs to respective owners.
 
 
 
