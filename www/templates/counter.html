@@ -26,7 +26,7 @@
     <div class="bar bar-header bar-calm">
 		<button class="button icon-left ion-home"ui-sref="state1">
 		Home </button>
-        <h1 class="title">Health Calculator</h1>
+        <h1 class="title">Daily Calories</h1>
 		<a class="button icon-left ion-chevron-left button-clear button-light"ui-sref="state2">Back</a>
     </div>
       <ion-content>
@@ -68,13 +68,13 @@
 			</a>
 		<br>
 	  
-	    <button class="button button-block button-calm" ng-click="count = countbreakfast + countlunch + countdinner +countsnacks">
+	    <button class="button button-block button-calm button-clear button-outline" ng-click="count = countbreakfast + countlunch + countdinner +countsnacks">
             Calculate
         </button> 
-
+			<br>
 			<a class="item item-thumbnail-left" href="#">
 			<img src="images/calculator.png">
-			<p>Todays Calories</p>
+			<p> Todays Calories</p>
 			<label class="item item-input">
 			<input type="number" ng-model="count" />
 			</label>

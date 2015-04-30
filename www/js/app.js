@@ -14,7 +14,12 @@ angular.module('7 Day Health Tracker', ['ionic'])
 
 })
 
-		
+angular.module('tracker', ['ionic'])
+.controller('trackCrtl', function($scope) {
+  $scope.track = 0;
+  
+});	
+	
 angular.module('bmi', ['ionic'])
 .controller('BmiCrtl', function($scope) {
   $scope.BMI = 0;
