@@ -38,11 +38,12 @@ A copy of the source code can by found on https://github.com/clarereville/ionic-
 
 ###References
 ####Icons used in the app were sourced from Ionicons: http://ionicons.com/ 
-####http://www.bmi-calculator.net/bmr-calculator/
-####http://www.nhs.uk/livewell/goodfood/pages/eight-tips-healthy-eating.aspx
-####Counter code: https://github.com/ianmcloughlin/ionic-counter
+####The formulas for the BMI Calculator http://www.bmi-calculator.net/bmr-calculator/
+####Health& exercise advice sourced from http://www.nhs.uk/livewell/goodfood/pages/eight-tips-healthy-eating.aspx
+####Counter code used for the calculator https://github.com/ianmcloughlin/ionic-counter
 
-### All the Pictures in this app have taken from public domains & copyright of these belongs to respective owners.
+###Disclaimer
+All the Pictures in this app have taken from public domains & copyright of these belongs to respective owners.
 
 
 
