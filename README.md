@@ -42,8 +42,7 @@ A copy of the source code can by found on https://github.com/clarereville/ionic-
 ####http://www.nhs.uk/livewell/goodfood/pages/eight-tips-healthy-eating.aspx
 ####Counter code: https://github.com/ianmcloughlin/ionic-counter
 
-##Disclaimer: All the Pictures in this app have taken from public domains & 
-copyright of these belongs to respective owners.
+### All the Pictures in this app have taken from public domains & copyright of these belongs to respective owners.
 
 
 
