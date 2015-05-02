@@ -16,15 +16,9 @@ angular.module('7 Day Health Tracker', ['ionic'])
 
 angular.module('counter', ['ionic'])
       .controller("CountCtrl", function($scope) {
-        $scope.count = 0;
+        $scope.count = 0; 
       });
-
-
-angular.module('bmi', ['ionic'])
-.controller('BmiCrtl', function($scope) {
-  $scope.BMI = 0;
-  $scope.Cals = 0;
-});	  
+ 
 
 
 angular.module('7Day', ['ionic'])

@@ -17,7 +17,8 @@
     <script src="cordova.js"></script>
 
     <!-- your app's js-->
-    <script src="js/app.js"></script>
+    <script src = "js/app.js">
+	</script>
 	
   </head>
 	<!-- angular-->
@@ -84,7 +85,7 @@
 			</a>
 		<br>
 		<!--button when pressed will sum the imputed numbers from the user -->
-	    <button class="button button-block button-calm button-clear button-outline" ng-click="count = countbreakfast + countlunch + countdinner +countsnacks">
+	    <button class="button button-block button-calm button-clear button-outline" ng-click="count = (countbreakfast + countlunch + countdinner +countsnacks)">
             Calculate
         </button> 
 			<br>
@@ -95,7 +96,7 @@
 				<p> Todays Calories</p>
 				<!--output for calculator -->
 				<label class="item item-input">
-					<input type="number" ng-model="count" />
+					<input type="number" ng-model="count"/>
 				</label>
 			</a>
 	  

@@ -34,7 +34,7 @@ An external style sheet was used to manage the UI. Some in-line css was used for
 The app makes use of a combination of elements such as local data storage, lists, and cards and employs some basic angular elements. 
 
 ### Source code
-A copy of the source code can by found on https://github.com/clarereville/ionic-assignment.
+A copy of the source code can be found on https://github.com/clarereville/ionic-assignment.
 
 ###References
 ""Icons used in the app were sourced from Ionicons: http://ionicons.com/ 

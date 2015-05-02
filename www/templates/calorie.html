@@ -21,10 +21,16 @@
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
-    <script src="js/app.js"></script>
+  <script type= "text/javascript">
+	angular.module('bmi', ['ionic'])
+.controller('BmiCrtl', function($scope) {
+  $scope.BMI = 0;
+  $scope.Cals = 0;
+});	 
+</script>
 	
   </head>
-  <!-- angular module found in app.js 
+  <!-- angular 
     -->
   <body ng-app="bmi" ng-controller ="BmiCrtl">
 
