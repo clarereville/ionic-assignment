@@ -59,7 +59,7 @@
         </label>
 		<br>
 		<!-- when user clicks button it will calculate the bmi based on the weight and height in putted -->
-		<button class="button button-block button-balanced button-clear" id = "BMI" ng-click = "BMI = weight/(height*height)*703">
+		<button class="button button-block button-outline button-balanced button-clear" id = "BMI" ng-click = "BMI = weight/(height*height)*703">
            Calculate BMI
         </button> 
 		<br>
@@ -80,15 +80,18 @@
 		calculate their recommended daily calorie intake -->
 	<div class="card" "item item-text-wrap">
 		<h5>Add your age to get your recommended calories </h5>
+			<div class="list list-inset">
+			<!--section for calories -->
 			<label class="item item-input item-stacked-label">
 				<span class="input-label">Age</span>
 				<input type="number" ng-model="age" placeholder="Age" />
 			</label>
 		<br>
 	<!-- when clicked the calories will be calculated based on the formula -->
-			<button class="button button-block button-positive" ng-click = "Cals = 655+(4.35*weight)+(4.7*height)+(4.7*age)">
+			<button class="button button-block button-outline button-positive" ng-click = "Cals = 655+(4.35*weight)+(4.7*height)+(4.7*age)">
 				Calories
 			</button> 
+			<br>
 	<!-- the ideal consumption will be outputted  -->
 			<label class="item item-input item-stacked-label">
 				<span class="input-label">Ideal calorie consumption </span>

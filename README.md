@@ -37,7 +37,7 @@ The app makes use of a combination of elements such as local data storage, lists
 A copy of the source code can by found on https://github.com/clarereville/ionic-assignment.
 
 ###References
-Icons used in the app were sourced from Ionicons: http://ionicons.com/ 
+""Icons used in the app were sourced from Ionicons: http://ionicons.com/ 
 The formulas for the BMI Calculator http://www.bmi-calculator.net/bmr-calculator/
 Health& exercise advice sourced from http://www.nhs.uk/livewell/goodfood/pages/eight-tips-healthy-eating.aspx
 Counter code used for the calculator https://github.com/ianmcloughlin/ionic-counter
